@@ -23,9 +23,8 @@ def submit_form():
         data = request.form.to_dict()
         write_to_file(data)
         return redirect(request.referrer)
-        # return 'did it werk?'
     else:
-        return 'ah shit what happen'
+        return 'oops something went wrong'
 
 
 if __name__ == '__main__':
